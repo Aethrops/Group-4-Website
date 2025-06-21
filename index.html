@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Garden | Authentic Chinese Cuisine</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Zen Garden</a>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Authentic Chinese Cuisine</h1>
+                <p>Experience the harmony of flavors with our carefully crafted dishes, prepared using traditional techniques and the freshest ingredients.</p>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Signature Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxeXFMbK1xjVECH-4p2QWmi1MATe07IQyM5g&s" alt="Dumplings">
+                    <h3>Steamed Dumplings</h3>
+                    <p>Delicate dumplings filled with pork and vegetables, served with our house-made soy-vinegar sauce.</p>
+                    <p class="price">$8.50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kung Pao Chicken">
+                    <h3>Kung Pao Chicken</h3>
+                    <p>Tender chicken stir-fried with peanuts, vegetables, and chili peppers in a savory sauce.</p>
+                    <p class="price">$12.95</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beef Noodles">
+                    <h3>Braised Beef Noodles</h3>
+                    <p>Slow-cooked beef in aromatic broth with hand-pulled noodles and seasonal vegetables.</p>
+                    <p class="price">$14.50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mapo Tofu">
+                    <h3>Mapo Tofu</h3>
+                    <p>Silken tofu in a spicy sauce with minced pork and Sichuan peppercorns.</p>
+                    <p class="price">$10.95</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTza89XuqcvI6HAxx4cgkRt2Q__7pusfLjiCQ&s" alt="Spring Rolls">
+                    <h3>Crispy Spring Rolls</h3>
+                    <p>Golden crispy rolls filled with vegetables and served with sweet chili sauce.</p>
+                    <p class="price">$7.50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Peking Duck">
+                    <h3>Peking Duck</h3>
+                    <p>Crispy roasted duck served with thin pancakes, hoisin sauce, and fresh scallions.</p>
+                    <p class="price">$24.95</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <div class="order-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="delivery-time">Delivery Time</label>
+                        <select id="delivery-time" name="delivery-time" required>
+                            <option value="">Select a time</option>
+                            <option value="asap">As soon as possible</option>
+                            <option value="12:00">12:00 PM - 1:00 PM</option>
+                            <option value="13:00">1:00 PM - 2:00 PM</option>
+                            <option value="18:00">6:00 PM - 7:00 PM</option>
+                            <option value="19:00">7:00 PM - 8:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order">Your Order</label>
+                        <textarea id="order" name="order" placeholder="Please list the dishes you'd like to order..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Special Instructions</label>
+                        <textarea id="notes" name="notes" placeholder="Allergies, dietary restrictions, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Chinese Restau</h2>
+                <p>696 Ching Street, Chinatown</p>
+                <p>Open daily 11:00 AM - 10:00 PM</p>
+                <p>Phone: (555) 123-4567</p>
+                
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

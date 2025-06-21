@@ -1,0 +1,262 @@
+/* Base Styles */
+:root {
+    --primary: #8B5A2B; /* Warm brown */
+    --secondary: #F5F5F5; /* Light gray */
+    --accent: #D4A59A; /* Soft pink */
+    --text: #333333; /* Dark gray */
+    --light-text: #777777; /* Medium gray */
+}
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+body {
+    font-family: 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--secondary);
+    line-height: 1.6;
+}
+        
+/* Typography */
+h1, h2, h3 {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+        
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+        
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+        
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+        
+p {
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+        
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+        
+/* Header */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+        
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        
+.logo {
+    font-size: 1.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 300;
+}
+        
+nav ul {
+    display: flex;
+    list-style: none;
+}
+        
+nav ul li {
+    margin-left: 2rem;
+}
+        
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 300;
+    transition: color 0.3s;
+}
+        
+nav ul li a:hover {
+    color: var(--primary);
+}
+        
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+        
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+        
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+        
+.hero p {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2rem;
+}
+        
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+        
+.btn:hover {
+    background-color: #6d4320;
+}
+        
+/* Menu Section */
+.menu {
+    padding: 5rem 0;
+    background-color: white;
+}
+        
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+        
+.menu-item {
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+        
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+        
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+        
+.price {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+        
+/* Order Section */
+.order {
+    padding: 5rem 0;
+    background-color: var(--secondary);
+}
+        
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+        
+.form-group {
+    margin-bottom: 1.5rem;
+}
+        
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+        
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+        
+textarea {
+    height: 100px;
+}
+        
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+        
+.footer-content p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 0.5rem;
+}
+        
+.social-links {
+    margin-top: 1.5rem;
+}
+        
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+        
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+            
+    nav ul {
+        margin-top: 1rem;
+    }
+            
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+            
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
